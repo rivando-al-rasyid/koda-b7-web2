@@ -19,6 +19,73 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <style>
+
+.calendar {
+  margin: auto;
+}
+
+.month {
+  text-align: center;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+
+/* Weekday headers */
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: auto;
+}
+
+.weekdays div {
+  color: wheat;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.weekdays div:hover {
+  color: wheat;
+  text-align: center;
+  padding: 0.3rem 0;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+
+/* Day numbers */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: auto;
+}
+
+.days div {
+  color: whitesmoke;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+.days div:first-child {
+  color: red;
+}
+
+
+.days div:hover {
+  color: wheat;
+  text-align: center;
+  padding: 0.3rem 0;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+.abu {
+  color: gray;
+}
+
+  </style>
 </head>
 
 <body>
@@ -41,25 +108,67 @@
   </header>
 
   <main>
-    <article>
-      <section class="center">
-        <p>
-          <dfn>produktivitas</dfn> /pro·duk·ti·vi·tas/ <abbr title="nomina">n</abbr>
-          kemampuan untuk menghasilkan sesuatu; daya produksi; keproduktifan:
-          <em>produktivitas pabrik kami sudah melampaui target</em>
-        </p>
-        <ul>
-          <li><strong>primer</strong> — Bio: produktivitas organisme yang berdaun hijau;</li>
-          <li><strong>sekunder</strong> — Bio: produktivitas organisme yang tergolong dalam konsumen (hewan) dan pengurai (bakteri dan jamur).</li>
-        </ul>
-        <p>
-          Referensi:
-          <a href="https://www.kbbi.web.id/produktivitas" target="_blank" rel="noopener noreferrer">
-            KBBI — produktivitas
-          </a>
-        </p>
-      </section>
-    </article>
+    <div class="calendar">
+
+      <div class="month">agustus 2026</div>
+      <!-- Weekdays header -->
+      <div class="weekdays">
+        <div>Mo</div>
+        <div>Tu</div>
+        <div>We</div>
+        <div>Th</div>
+        <div>Fr</div>
+        <div>Sa</div>
+        <div>Su</div>
+      </div>
+
+      <div class="days">
+        <div style='color: grey;'>26</div>
+        <div style='color: grey;'>27</div>
+        <div style='color: grey;'>28</div>
+        <div style='color: grey;'>29</div>
+        <div style='color: grey;'>30</div>
+        <div style='color: grey;'>31</div>
+        <div>1</div>
+        <div style='color: red;'>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div style='color: red;'>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div style='color: red;'>16</div>
+        <div style='color: red;'>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div style='color: red;'>23</div>
+        <div>24</div>
+        <div style='color: red;'>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+        <div>29</div>
+        <div style='color: red;'>30</div>
+        <div>31</div>
+        <div style='color: grey;'>1</div>
+        <div style='color: grey;'>2</div>
+        <div style='color: grey;'>3</div>
+        <div style='color: grey;'>4</div>
+        <div style='color: grey;'>5</div>
+
+      </div>
+
+    </div>
   </main>
 
   <script src="../js/main.js" defer></script>
