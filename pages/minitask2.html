@@ -33,19 +33,29 @@
   padding: 0.5rem 0;
   letter-spacing: 0.05em;
 }
-
+.calendar-line {
+  border: 0;
+  height: 1px;
+  background: var(--text-muted);
+  margin: 0.5rem 0 1rem 0;
+  opacity: 0.5;
+}
 
 /* Weekday headers */
 .weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   margin: auto;
+
 }
 
 .weekdays div {
+  border: 0px 0px 1px 0px solid black;
+
   color: wheat;
   text-align: center;
   padding: 0.3rem 0;
+  box-sizing: border-box;
 }
 
 .weekdays div:hover {
@@ -62,12 +72,17 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   margin: auto;
+
 }
 
 .days div {
+
   color: whitesmoke;
   text-align: center;
   padding: 0.3rem 0;
+  box-sizing: border-box;
+
+
 }
 .days div:first-child {
   color: red;
