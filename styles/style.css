@@ -71,6 +71,21 @@ nav ul li {
   margin-bottom: 0.5rem;
 }
 
+.navbar ul {
+  list-style: none;      /* Removes default bullet points */
+  padding: 0;            /* Removes default padding */
+  margin: 0;             /* Removes default margin */
+  display: flex;         /* Activates Flexbox for the ul container */
+  justify-content: center;
+  gap: 1rem;             /* Adds space between list items */
+}
+
+.navbar li a {
+  text-decoration: none; /* Removes default underlines from links */
+  color: black;
+}
+
+
 /* --- Back Link --- */
 .back-link {
   display: inline-block;
@@ -88,7 +103,6 @@ main {
   font-family: 'Rubik Glitch', cursive;
   font-size: 3rem;
   color: green;
-  float: left;
   line-height: 1;
   margin-right: 0.1em;
 }
@@ -96,15 +110,8 @@ main {
 .drop-cap-plain {
   font-family: 'Rubik Glitch', cursive;
   font-size: 3rem;
-  float: left;
   line-height: 1;
   margin-right: 0.1em;
-}
-
-/* --- Lists --- */
-ol.alpha-d {
-  list-style-type: lower-alpha;
-  /* start="4" ditangani lewat atribut HTML — tidak bisa via CSS murni */
 }
 
 ul.square {
