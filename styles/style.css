@@ -80,10 +80,6 @@ nav ul li {
   gap: 1rem;             /* Adds space between list items */
 }
 
-.navbar li a {
-  text-decoration: none; /* Removes default underlines from links */
-  color: black;
-}
 
 
 /* --- Back Link --- */
@@ -134,8 +130,7 @@ caption {
   margin-bottom: 0.5rem;
 }
 
-th,
-td {
+th,td {
   border: 3px solid #333;
   padding: 0.4rem 0.8rem;
 }
