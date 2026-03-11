@@ -1,0 +1,66 @@
+:root {
+  --primary-bg-color: blue; /* global scope */
+  --secondary-bg-color: green  ; /* global scope */
+  --error-color: tomato  ; /* global scope */
+
+}
+
+input[type="email"]{
+  border: 2px solid red;
+}
+
+[data-role="primary"] {
+  border: 2px solid var(--primary-bg-color);
+}
+
+[data-status="info"]{
+  color: var(--primary-bg-color) ;
+}
+
+
+[data-status="success"]{
+  color: green ;
+}
+
+
+[data-status="warning"]{
+  color: orange ;
+}
+
+[data-status="error"]{
+  color: var(--error-color) ;
+}
+
+thead tr{
+  background-color: orangered;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--secondary-bg-color);
+}
+tbody tr:nth-child(odd) {
+  background-color: var(--primary-bg-color);
+}
+
+ol li:nth-child(even) , ul li:nth-child(even) {
+      background-color: var(--secondary-bg-color);
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+h2 + p::first-letter {
+  font-size: 2em;
+}
+
+[data-type="info"]{
+  color: greenyellow ;
+}
+
+[data-type="warning"]{
+  color: orange;
+}
+[data-type="error"]{
+  color: red;
+}
